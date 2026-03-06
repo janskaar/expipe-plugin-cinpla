@@ -322,7 +322,7 @@ def process_ecephys(
                     nwbfile=nwbfile_out,
                     unit_table_name=f"RawUnits-{sorter}",
                     unit_table_description=f"Raw units from {sorter} output",
-                    write_in="processing",
+                    write_in_processing_module=True,
                 )
             metadata_ecephys = {}
             # assign existing device
